@@ -62,4 +62,86 @@ rainbowConnection = () =>
 
 // 9 yes
 
-// do not commit yet, finish in morning
+// 10a 
+const newMuppetMovies = [
+    'the muppets',
+    'muppets: most wanted'
+];
+// 10b
+const uppermovies= newMuppetMovies.map(movies => movies.toUpperCase());
+console.log(uppermovies)
+
+// 11a
+
+const oldmuppetmovies = [
+    'the muppet movie',
+    'the muppets take manhattan',
+    'the great muppet caper',
+    'the muppet christmas carol',
+    'muppet treasure island',
+    'muppets from space'
+
+]
+
+// 11b
+const twomovies = oldmuppetmovies.filter(a => a.length === 22);
+console.log(twomovies);
+
+// 12a
+const charactersone = [
+    'statler',
+    'waldorf',
+]
+
+// 12b
+const characterstwo = [
+    'the swedish chef',
+    'Animal',
+    'rowlf'
+]
+
+// 12c
+randommuppet = (characters) => {
+    console.log(`${characters[math.floor(math.random()* characters.length)]}`
+    )};
+
+// 12d
+randommuppet(charactersone);
+
+randommuppet (characterstwo);
+
+// 13
+caps = (string) => {
+let newstring = ``;
+for (i=0;i < string.length; i++){if (i % 2 ===0) { newstring += string[i].toUpperCase();}
+else {
+    newstring += string[i].tolowercase();
+}
+}
+return newstring
+}
+
+console.log (caps('Hello World'));
+
+
+
+// EXTRA
+
+
+caps = (string) => { let count = 0;
+let newstring = ``;
+for (i=0;i < string.length; i++){
+    if (string[i] === ` `){
+    newstring += ` `;
+} else if (count % 2 === 0){
+        newstring += string[i].toUppercase();
+    } else {
+        newstring += string[i].tolowercase();
+        count++;
+    }
+}
+return newstring += ` `;
+
+} 
+
+console.log (caps('hello world'));
