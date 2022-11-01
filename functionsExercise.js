@@ -52,12 +52,9 @@ const manOrMuppet = function(){
 manOrMuppet();
 
 // 7
-rainbowConnection = () =>
-    'someday we\'ll find it. The Rainbow Connection the lovers the dreamers and me'
-  ;
-  
-  console.log(rainbowConnection.map(rainbowConnection => rainbowConnection.length));
+rainbowConnections = () => console.log("Someday we'll find it. The Rainbow Connection. The lovers, the dreamers and me");
 
+rainbowConnections();
 // 8 no
 
 // 9 yes
