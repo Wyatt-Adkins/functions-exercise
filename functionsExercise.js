@@ -99,7 +99,7 @@ const characterstwo = [
 
 // 12c
 randommuppet = (characters) => {
-    console.log(`${characters[math.floor(math.random()* characters.length)]}`
+    console.log(`${characters[Math.floor(Math.random()* characters.length)]}`
     )};
 
 // 12d
@@ -112,7 +112,7 @@ caps = (string) => {
 let newstring = ``;
 for (i=0;i < string.length; i++){if (i % 2 ===0) { newstring += string[i].toUpperCase();}
 else {
-    newstring += string[i].tolowercase();
+    newstring += string[i].toLowerCase();
 }
 }
 return newstring
